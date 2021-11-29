@@ -28,7 +28,7 @@ Command that gets called internally to make the updates to the database.
 - collect static `python manage.py collectstatic`
 - to serve static on heroku: `pipenv install whitenoise`
 - add whitenoise middleware after `SecurityMiddleware`: `whitenoise.middleware.WhiteNoiseMiddleware`
-- add to git
+- add to git from work_dir
 - `heroku login`
 - `heroku create`
 - `git push heroku master` push to heroku remote git
