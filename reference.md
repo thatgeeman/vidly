@@ -33,5 +33,6 @@ Command that gets called internally to make the updates to the database.
 - `heroku create`
 - `git push heroku master` push to heroku remote git
 - deploy: `heroku ps:scale web=1`
-- add to allowed hosts in `settings.py`, add, commit, push
+- add to allowed hosts without `https://` in `settings.py`, add, commit, push
 - `heroku open`
+- `heroku logs --tail`
