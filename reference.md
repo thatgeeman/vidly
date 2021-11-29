@@ -20,6 +20,7 @@ Command that gets called internally to make the updates to the database.
 
 
 ## Deployment on Heroku
+- `pip freeze > requirements.txt`
 - Setup Heroku account
 - Install heroku-cli `brew install heroku/brew/heroku`
 - Web process `pipenv install gunicorn`
