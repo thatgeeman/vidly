@@ -25,7 +25,7 @@ SECRET_KEY = '&qui5_-ndi)4@h-v2umr@6m81&ijt^8wwtwd17u^1$&g&)q9+_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://thawing-gorge-81571.herokuapp.com/']
 
 
 # Application definition

@@ -28,3 +28,10 @@ Command that gets called internally to make the updates to the database.
 - collect static `python manage.py collectstatic`
 - to serve static on heroku: `pipenv install whitenoise`
 - add whitenoise middleware after `SecurityMiddleware`: `whitenoise.middleware.WhiteNoiseMiddleware`
+- add to git
+- `heroku login`
+- `heroku create`
+- `git push heroku master` push to heroku remote git
+- deploy: `heroku ps:scale web=1`
+- add to allowed hosts in `settings.py`, add, commit, push
+- `heroku open`
