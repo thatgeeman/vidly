@@ -8,9 +8,12 @@
 `python manage.py makemigrations`
 `python manage.py migrate`
 
-# Show SQLMigrate
+## Create app template
+`python manage.py startapp movies`
+
+## Show SQLMigrate
+Command that gets called internally to make the updates to the database.
 `python manage.py sqlmigrate movies 0001`
 
-
-# User
+## User
 `python manage.py createsuperuser`
