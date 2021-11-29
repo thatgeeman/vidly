@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Vidly</span>
+        </div>
+    </nav>
+    <!--dl>(dt+dd)*3 use html editor, not django html-->
+    <dl>
+        <dt>Title</dt>
+        <dd>{{movie.title}}</dd>
+        <dt>Genre</dt>
+        <dd>{{movie.genre}}</dd>
+        <dt>Stock</dt>
+        <dd>{{movie.stock}}</dd>
+    </dl>
+{% endblock %}

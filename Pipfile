@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "==3.1.2"
 pylint-django = "*"
+django-tastypie = "*"
 
 [dev-packages]
 

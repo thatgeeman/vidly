@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Available Movies</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Vidly</span>
+        </div>
+    </nav>
     <!-- table.table>thead>tr>th*4 -->
-    <table class="table">
+    <table class="table table-bordered table-hover">
         <thead>
             <tr>
                 <th>Title</th>
@@ -17,19 +17,22 @@
                 <th>Daily Rate</th>
             </tr>
         </thead>
-    </table>
     <!--tbody>tr>td*4-->
     <tbody>
         <!--iterate each col for each movie-->
         {% for movie in movies %}
             <tr>
-                <td>{{movie.title}}</td>
+                <td>
+                    <!--use href to hyperlink movies_detail used in urls.py
+                        can use movies:detail since we set app_name in urls.py
+                    -->
+                    <a href="{% url 'movies:detail' movie.id %}"> {{movie.title}} </a>
+                </td>  
                 <td>{{movie.genre}}</td>
                 <td>{{movie.stock}}</td>
                 <td>{{movie.daily_rate}}</td>
             </tr>
         {% endfor %}
     </tbody>
-    
-</body>
-</html>
+    </table>
+{% endblock content %}
