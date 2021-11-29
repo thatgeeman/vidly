@@ -7,6 +7,8 @@ name = "pypi"
 django = "==3.1.2"
 pylint-django = "*"
 django-tastypie = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 

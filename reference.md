@@ -17,3 +17,14 @@ Command that gets called internally to make the updates to the database.
 
 ## User
 `python manage.py createsuperuser`
+
+
+## Deployment on Heroku
+- Setup Heroku account
+- Install heroku-cli `brew install heroku/brew/heroku`
+- Web process `pipenv install gunicorn`
+- `touch Procfile` for heroku: `web: gunicorn vidly.wsgi`
+- set static folder in `settings.py` and `mkdir`
+- collect static `python manage.py collectstatic`
+- to serve static on heroku: `pipenv install whitenoise`
+- add whitenoise middleware after `SecurityMiddleware`: `whitenoise.middleware.WhiteNoiseMiddleware`
